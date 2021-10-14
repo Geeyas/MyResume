@@ -1,0 +1,135 @@
+<!--- SAME CODE FOR OTHER PAGE TILL... ----->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CURRICULUM VITAE</title>
+	
+	 <link rel = "icon" href ="./image/logo1.jpg"
+        type = "image/x-icon">
+	<link rel="stylesheet" href="style.css">
+
+
+	<link rel="stylesheet" href="./jq/jquery-ui-1.12.1/jquery-ui.css">
+	<script src="./jq/jQuery.js"></script>	
+<script src="./jq/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="./src.js"></script>
+</head>
+<body onload="startTime()">
+
+<header>
+	<div id="logo">
+	<a href="./index.html">
+		<img src="./image/logo.png" alt="logo" id="logo">
+	</a>	</div>
+	<div id="CV">
+		CURRICULUM VITAE
+	</div>
+</header>
+
+<hr style="display:none;">
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+	
+<nav>
+	<ul>
+		<li><a href="./home.html" id="home" class="glyphicon glyphicon-home"> HOME </a></li>
+		<li><a href="./Resume.html" id="resume" class="glyphicon glyphicon-file"> RESUME</a></li>
+		<li><a href="./study.html" id="study" class="glyphicon glyphicon-book"> STUDY</a></li>
+		<li><a href="./cover.html" id="cover-letter" class="glyphicon glyphicon-file"> COVER  LETTER</a></li>
+		<li><a href="./Source Code.html" id="hobby"> SOURCE CODE</a></li>
+		<li><a href="./languages.html" id="language"> LEARNED  LANGUAGES</a></li>
+		<li><div id="txt"></a></li>
+
+	</ul>
+</nav>
+
+<hr style="box-shadow: 0 0 10px black;">
+
+<!---------------------- ... HERE  -------------------------------------->
+
+<main>
+	<section class="intro">
+		<h1 style="text-align: center;"> <U> PERSONAL INTRODUCTION </U> </h1>
+		<h2>
+			I am Geeyas Acharya. 20-years-old boy from Nepal. Currently, I am a student of Southern Cross University and I am here to pursue my bachelor’s degree in information and Technology. Further, I am willing to finish my bachelor’s degree and became a successful IT officer in near future.
+		<div class="sectionfooter">
+			<a href="./Resume.html">+Click here for more </a>
+		</div>
+		</h2>
+	</section>
+
+	<section class="study">
+		<h1 style="text-align: center;"> <U> STUDY </U> </h1>
+		<h2>
+			Currently I am enrolled into Bachelor of Information Technology course in Souther Cross University. I have complted my year 12 from my home Country Nepal.
+		<div class="sectionfooter">
+			<a href="#">+Click here for more </a>
+
+
+		</div>
+		</h2>
+	</section>
+
+	<section class="hobby">
+		<h1 style="text-align: center;"> <U>  HOBBY </U> </h1>
+		<h2>
+			I love to take photos and draw an picture. In my leisure time I take photos in differet ways and learn about photography by myself. Also, I love to draw pictures. Apart, from from these things I also love to listen to music, travel to different places and spend more time in designing many things.
+		<div class="sectionfooter">
+			<a href="#">+Click here for more </a>
+		</div>
+		</h2>
+	</section>
+
+	<section class="aim">
+		<h1 style="text-align: center;"> <U>  AIM </U> </h1>
+		<h2>
+			My aim to be an web designer. Apart from web deisgner I also want to be an software developer.
+		<div class="sectionfooter">
+			<a href="#">+Click here for more </a>
+		</div>
+	</h2>
+	</section>
+		
+		
+</main>
+<br>
+<br>
+<hr style="box-shadow: 0 0 10px black;">
+<div class="foot" bgimg>
+	Name - Geeyas Acharya <br><br>
+	Phone Number - 0420743183 <br><br>
+	Email - geeyasa@gmail.com <br><br>
+</div>
+
+<hr style="box-shadow: 0 0 10px black;">
+
+<footer>
+	<marquee> &copy Copyright 2020 </marquee>
+</footer>
+
+
+
+
+
+
+	
+</body>
+</html>

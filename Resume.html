@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CURRICULUM VITAE</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./jq/jquery-ui-1.12.1/jquery-ui.css">
+	<script src="./jq/jQuery.js"></script>	
+<script src="./jq/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="./src.js"></script>
+
+<!-- <script>
+	pass=prompt("Password");
+	if(pass='document')
+		alert('Correct!!');
+	else if (pass!='document')
+		alert('Wrong!!');
+</script> -->
+
+</head>
+<body onload="startTime()">
+
+<header>
+	<div id="logo">
+	<a href="./index.html">
+		<img src="./image/logo.png" alt="logo" id="logo">
+	</a>	</div>
+	<div id="CV">
+		CURRICULUM VITAE
+	</div>
+</header>
+
+<hr style="display:none;">
+	
+<nav>
+	<ul>
+		<li><a href="./home.html" id="home">HOME </a></li>
+		<li><a href="./Resume.html" id="resume"> RESUME</a></li>
+		<li><a href="./study.html" id="study"> STUDY</a></li>
+		<li><a href="./cover.html" id="cover-letter"> COVER  LETTER</a></li>
+		<li><a href="./Source Code.html" id="hobby"> SOURCE CODE</a></li>
+		<li><a href="./languages.html" id="language"> LEARNED  LANGUAGES</a></li>
+		<li><a href="#" id="txt"></a></li>
+
+	</ul>
+</nav>
+
+<hr style="box-shadow: 0 0 10px black;">
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+<!---- starting of resume.html page coding --->
+
+<fieldset>
+	<legend>  resume </legend>
+	<div id = "nam">
+		<span style="color:#234; font-size:24px;"><b> <u>Geeyas Acharya</u></b> </span> <br>
+		21/64 Spencer Avenue <br>
+		Yokine, WA 6060 <br>
+		Mo.:0420743183 <br>
+		<address>
+		E-mail: <a href="mailto:geeyasa@gmail.com">geeyasa@gmail.com</a> </address>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<hr>
+		<span class="point"> Career objective 
+		</span>
+	<hr>
+	<span class="descp">I am looking for work as an front end web developer to expand skills and experience in a busy & challenging environment. I am a strong team player who always completes tasks on time and with a high degree of quality. I can juggle multiple tasks and work independently or with others.
+	</span>
+
+	<hr>
+		<span class="point"> Education and Training 
+		</span>
+	<hr>
+	<span class="descp">2017: Completed 12th grade  
+	<br>
+	Currently studying a Bachelor of IT (Information Technology)
+	</span>
+
+	<hr>
+		<span class="point"> Computer & IT Skills 
+		</span>
+	<hr>
+	<span class="descp">
+		<ul>
+			<li> 1. Computer Skills – MS Paint, Efficient typing skills </li>
+			<li> 2. Able to use Microsoft office software.</li>
+			<li>3. E-mail and Internet Proficient</li>
+			<li>4. Able to code program in HTML, CSS & JAVASCRIPT </li>
+		</ul>
+	</span>
+
+	<hr>
+		<span class="point"> Qualification Overview 
+		</span>
+	<hr>
+	<span class="descp">
+		<ul>
+			<li> 1. Handling a high workload </li>
+			<li> 2. Adherence to health standards </li>
+		</ul>
+	</span>
+
+	<hr>
+		<span class="point"> Work Experience 
+		</span>
+	<hr>
+	<span class="descp">
+		Working as an TeamMember in OfficeWork Subiaco
+	</span>
+
+	<hr>
+		<span class="point"> Personal Details 
+		</span>
+	<hr>
+	<span class="descp">
+		<b>Date of Birth: </b> 04 April 2000 <br>
+		<b>Nationality:</b> Nepalese <br>
+		<b>Languages:</b> Nepali and English – fluent writing, reading, and clear understanding <br>
+		<b>Health:</b> Physically fit <br>
+		<b>Interests & Hobbies:</b> Web-designing; Music <br>
+	</span>
+
+</fieldset>
+<hr style="box-shadow: 0 0 10px black;">
+<a href="./docs/resume.docx" download="Resume">
+<input type="button" value="Download Resume" id="download">
+</a> 
+
+<br> <br>
+
+<footer>
+	<marquee> &copy Copyright 2020 </marquee>
+</footer>
+</body>
+</html>

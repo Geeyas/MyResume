@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CURRICULUM VITAE</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./jq/jquery-ui-1.12.1/jquery-ui.css">
+	<script src="./jq/jQuery.js"></script>	
+<script src="./jq/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="./src.js"></script>
+
+<script>
+	var password
+	var pass="document"
+	password=prompt('Enter the password');
+	if(password="document");
+		alert("Correct!!")
+	else
+	{
+		window.location.('.\CV\cover.html');
+	}
+</script>
+
+</head>
+<body onload="startTime()">
+
+<header>
+	<div id="logo">
+	<a href="./index.html">
+		<img src="./image/logo.png" alt="logo" id="logo">
+	</a>	</div>
+	<div id="CV">
+		CURRICULUM VITAE
+	</div>
+</header>
+
+<hr style="display:none;">
+	
+<nav>
+	<ul>
+		<li><a href="./home.html" id="home">HOME </a></li>
+		<li><a href="./Resume.html" id="resume"> RESUME</a></li>
+		<li><a href="./study.html" id="study"> STUDY</a></li>
+		<li><a href="./cover.html" id="cover-letter"> COVER  LETTER</a></li>
+		<li><a href="./Source Code.html" id="hobby"> SOURCE CODE</a></li>
+		<li><a href="./languages.html" id="language"> LEARNED  LANGUAGES</a></li>
+		<li><a href="#" id="txt"></a></li>
+
+	</ul>
+</nav>
+
+<hr style="box-shadow: 0 0 10px black;">
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+<!---- starting of resume.html page coding --->
+
+<fieldset>
+	<legend>  cover letter </legend>
+	<span style="margin-left: 35%; color: #234; font-size: 30px;">
+		<u>To Whom It May Concern</u><br><br>
+	</span>
+	<span class="descp">
+	This is to inform you that I “Geeyas Acharya” aged 20 years is interested in joining your team. As I am a dedicated and caring person. I don’t have any experience, but I will give my 100% to make you believe I am able to work with your team. <p>
+
+	My nationality is Nepali, and I am an international student. I am currently studying a Bachelor of Information technology (IT) at Southern Cross University (SCU), Perth, and I did complete my year 12 back in my country Nepal in 2017.<p>
+
+	I have a knowledge of HTML, CSS, JavaScript and Java computer languages.
+	I have some of my sample projects which I have created using these languages, you can find the link in my “Curriculum Vitae” webpage.<p>
+
+	I have enlisted all my details in my resume.  I am looking forward to seeing your response. I hope that I will hear a positive response.<p>
+
+
+Thank you <br>
+Yours Faithfully <br>
+Geeyas Acharya <br>
+Phone: 0420743183 <br>
+Email: geeyasa@gmail.com <br>
+</span>
+
+
+	
+</fieldset>
+<hr style="box-shadow: 0 0 10px black;">
+
+<a href="./docs/cover.docx" download="Cover">
+<input type="button" value="Download Cover" id="download"> 
+</a>
+<br> <br>
+
+
+
+
+
+<footer>
+	<marquee> &copy Copyright 2020 </marquee>
+</footer>
+</body>
+</html>

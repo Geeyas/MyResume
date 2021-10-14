@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CURRICULUM VITAE</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./jq/jquery-ui-1.12.1/jquery-ui.css">
+	<script src="./jq/jQuery.js"></script>	
+<script src="./jq/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="./src.js"></script>
+</head>
+<body onload="startTime()">
+
+<header>
+	<div id="logo">
+	<a href="./index.html">
+		<img src="./image/logo.png" alt="logo" id="logo">
+	</a>	</div>
+	<div id="CV">
+		CURRICULUM VITAE
+	</div>
+</header>
+
+<hr style="display:none;">
+	
+<nav>
+	<ul>
+		<li><a href="./home.html" id="home">HOME </a></li>
+		<li><a href="./Resume.html" id="resume"> RESUME</a></li>
+		<li><a href="./study.html" id="study"> STUDY</a></li>
+		<li><a href="./cover.html" id="cover-letter"> COVER  LETTER</a></li>
+		<li><a href="./Source Code.html" id="hobby"> SOURCE CODE</a></li>
+		<li><a href="./languages.html" id="language"> LEARNED  LANGUAGES</a></li>
+		<li><a href="#" id="txt"></a></li>
+
+	</ul>
+</nav>
+
+<hr style="box-shadow: 0 0 10px black;">
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+	<fieldset>
+		<legend> study </legend>
+		<div id="schooling">
+			<h3> schooling </h3>
+				I did complete my schooling from boarding school. First, I did complete my lower-primary level in my born city Dhankuta, Nepal.
+				After completition of my lower-primary, I moved to another city Ithari,Nepal where I complete my higher-primary and lower secondary level of schooling. 
+				After that I went to the neighbour city of Itahari i.e. Biratnagar, Nepal for my higher level of schooling and I finish my school level in biratnagar.
+		</div>
+		<br>
+		<hr style="box-shadow: 0 0 10px black;">
+		<br>
+
+		<div id="year12">
+			<h3> Year-11 & year-12 </h3>
+
+			After completing my school level in Biratnagar, I join to the college for my higher level of study. I join in one of the college in Biratnagar in Science faculty.
+		</div>
+		<br>
+		<hr style="box-shadow: 0 0 10px black;">
+		<br>
+
+		<div id="bachelor">
+			<h3> Bachelor </h3>
+			After the completion of my college level I want to do my further study in abroad so I choose Australia as my study destination and I apply for visa to Australia as an Internation student. I took my admission in Southern Cross University in the course Bachelor of Information Technology.
+		</div>
+		
+
+
+	</fieldset>
+	<br><hr style="box-shadow: 0 0 10px black;"><br>
+
+	<footer>
+	<marquee> &copy Copyright 2020 </marquee>
+</footer>
+
+</body>
+</html>
+	

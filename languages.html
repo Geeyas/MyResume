@@ -1,0 +1,259 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CURRICULUM VITAE</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./jq/jquery-ui-1.12.1/jquery-ui.css">
+
+	<script src="./jq/jQuery.js"></script>	
+	<script src="./jq/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<script src="./src.js"></script>
+
+</head>
+<body onload="startTime()">
+
+<header>
+	<div id="logo">
+	<a href="./index.html">
+		<img src="./image/logo.png" alt="logo" id="logo">
+	</a>	</div>
+	<div id="CV">
+		CURRICULUM VITAE
+	</div>
+</header>
+
+<hr style="display:none;">
+	
+<nav>
+	<ul>
+		<li><a href="./home.html" id="home">HOME </a></li>
+		<li><a href="./Resume.html" id="resume"> RESUME</a></li>
+		<li><a href="./study.html" id="study"> STUDY</a></li>
+		<li><a href="./cover.html" id="cover-letter"> COVER  LETTER</a></li>
+		<li><a href="./Source Code.html" id="hobby"> SOURCE CODE</a></li>
+		<li><a href="./languages.html" id="language"> LEARNED  LANGUAGES</a></li>
+		<li><a href="#" id="txt"></a></li>
+
+	</ul>
+</nav>
+
+<hr style="box-shadow: 0 0 10px black;">
+
+
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+	<fieldset id="programmingLanguage">
+		<legend> Created Projects </legend>
+
+		<fieldset class="languageDescp">
+			<legend id="languageLegend">html &amp; css</legend>
+			<ol type="I">
+				<li> Parallex scrolling effect</li>
+				<p> In this project it contain an simple background which is commonaded with an CSS and as a result gives an smooth scrolling effect known as Parallex Scrolling Effect. </p>
+				<a href="https://geeyas.github.io/parallex/" target="blank"> Parallex Scrolling Effect </a>
+				<br><br>
+				<iframe src="https://geeyas.github.io/parallex/"></iframe>
+				<br><br><hr>
+				<li> Template of an WebPage </li>
+				<p> This is an template content. Ready for the content. In this conent, animation is used for "Welcome", in the title name. Grid is used in here to put the content in there in the desiarable formate.
+					Navigation bar is created with some effects of hovering and clicking using CSS.
+					Java script is used in here to create and alret for the user before entering the webPage, which greet the user.
+				</p>
+				<p> For the fun one moving horse is also created.
+				</p>
+				<a href="https://geeyas.github.io/horsewalk/" target="blank"> Template of an WebPage </a>
+				<br><br>
+				<iframe src="https://geeyas.github.io/horsewalk/"></iframe>
+				<br><br><hr>
+
+				<li> Solar System </li>
+				<p> In this project, purely HTML and CSS is used to make an solar system. Images of Earth and Stars was downladed for this project but sun and moon was created with color using css property. Css property is used to make the Earth make a rotation and revolution around the sun and so as with moon. </p>
+				<a href="https://geeyas.github.io/universe/" target="blank"> Solar System </a>
+				<br><br>
+				<iframe src="https://geeyas.github.io/universe/"></iframe>
+
+				<br><br><hr>
+
+				<li> Portfolio </li>
+				<p> This is my college assignment which was created during the time of my college. First, project ever I have made.</p>
+				<a href="http://infotech.scu.edu.au/~gachar10/gacharya_ISY10209_Ass3_index.html" target="blank"> Electronic Portfolio </a>
+				<br><br>
+				<iframe src="http://infotech.scu.edu.au/~gachar10/gacharya_ISY10209_Ass3_index.html"></iframe>
+				<br><br><hr>
+
+				<li> Animation created with CSS </li>
+				<p> This project is an practice of an css animation. Which uses "animation" and "keyframes" css property to create some cool effects in the web-page. </p>
+				<a href="https://geeyas.github.io/animation/" target="blank"> CSS animation </a>
+				<br><br>
+				<iframe src="https://geeyas.github.io/animation/"></iframe>
+
+			</ol>
+		</fieldset>
+		<br><br>
+		<hr style="box-shadow: 0 0 10px black;">
+		<hr style="box-shadow: 0 0 10px black;">
+
+		<fieldset class="languageDescp">
+			<legend id="languageLegend">BootStrap</legend>
+			<ol type="I">
+				<li> Carousel </li>
+				<p> This project is created using a <span style="color: red;"> BootStrap. </span> I contain a box with an images and keeps on changing on the time Interval. It is also known as Caraousel box or slideShow Image or Slider Box.</p>
+				<a href="https://geeyas.github.io/caraousel/" target="blank"> Carousel </a>
+				<br><br>
+				<iframe src="https://geeyas.github.io/caraousel/"></iframe>
+
+		</fieldset>
+		<br><br>
+		<hr style="box-shadow: 0 0 10px black;">
+		<hr style="box-shadow: 0 0 10px black;">
+
+	<fieldset class="languageDescp">
+			<legend id="languageLegend">JavaScript</legend>
+			<ol type="I">
+				<li> SignUp Form </li>
+				<p> This Form in used by using HTML, CSS and JavaScript. This form mainly highlights the Java script. It will ask the user to fill up all the required areas before sumitting the form and CSS code used in it will give the form a good looks and animation.
+				It has an submit button which will only submit the form and send it to the database if user fill up all the required areas. </p>
+
+				<a href="https://geeyas.github.io/js-form/" target="blank"> SignUp Form </a> 
+				<br><br>
+				<iframe src="https://geeyas.github.io/js-form/"></iframe>
+				<br><br><hr>
+
+				<li> Real Time  </li>
+				<p> This project contain a javascript which will get the real time and date from users device and display it in the webpage. </p>
+
+				<a href="https://geeyas.github.io/clock/" target="blank"> Time </a> 
+				<br><br>
+				<iframe src="https://geeyas.github.io/clock/"></iframe>
+			</ol>
+
+	</fieldset>
+	<br>
+
+	<hr style="box-shadow: 0 0 10px black;">
+	<hr style="box-shadow: 0 0 10px black;">
+
+	<fieldset class="languageDescp">
+			<legend id="languageLegend">Java</legend>
+			<ol type="I">
+				<li> Greenfoot Game </li>
+				<p> This is an simple game created using a Greenfoot platform and coded in Java programming language. </p>
+
+				<a href="https://www.greenfoot.org/scenarios/26445" target="blank"> Turtle Game </a> 
+				<br><br>
+				<iframe src="https://www.greenfoot.org/scenarios/26445"></iframe>
+			</ol>
+
+	</fieldset>
+	<br>
+
+	<hr style="box-shadow: 0 0 10px black;">
+	<hr style="box-shadow: 0 0 10px black;">
+
+<fieldset class="languageDescp">
+	<legend id="languageLegend">jQuery</legend>
+		<ol type="I">
+				<li> Synatx of Jquery </li>
+				<p> This is an simple project which contains some of the simple jQuery synatx and the functions performed from it. It contains a button which moves an div, and one magic box which detects the user mouse cursor and also interacts with the user when inputing users name. </p>
+
+				<a href="https://geeyas.github.io/js-syntax/" target="blank"> jQuery Syntax </a> 
+				<br><br>
+				<iframe src="https://geeyas.github.io/js-syntax/"></iframe>
+				<br><br><hr>
+
+				<li> Calculator </li>
+				<p> This is an calculator which performs a basic task and given command using jQuery. </p>
+
+				<a href="https://geeyas.github.io/calculator/" target="blank"> Calculator </a> 
+				<br><br>
+				<iframe src="https://geeyas.github.io/calculator/"></iframe>
+				<br><br><hr>
+
+				<li> Moving Car  </li>
+				<p> This project contain an car in the screen and it can be actually controlled by the user in any direction as wish with the help of buttons placed on the screen. </p>
+
+				<a href="https://geeyas.github.io/carhtml/" target="blank"> Moving Car </a>
+				<br><br>
+				<iframe src="https://geeyas.github.io/carhtml/"></iframe>
+				<br><br><hr>
+
+				<li> Car Race  </li>
+				<p> There are two cars in standby position in the road and they are ready for the race. When user is ready to see the race, click on the "race" button and the two car will race and result will be published in the scoreboard just below the racetrack.  </p>
+
+				<a href="https://geeyas.github.io/racepro/" target="blank"> Car Race </a> 
+				<br><br>
+				<iframe src="https://geeyas.github.io/racepro/"></iframe>
+					<br><br><hr>
+				<li> To-Do List </li>
+				<p> This is an web-application called To-Do list which allows user to input there daily activity. Also user can delete their activity when the work is done.
+				This project is created with <span style="color: red;"> JQuery-UI </span> </p>
+
+				<a href="https://geeyas.github.io/todolist/" target="blank"> To-do List </a> 
+				<br><br>
+				<iframe src="https://geeyas.github.io/todolist/"></iframe>
+
+				<br><br><hr>
+
+				<li> jQuery-UI </li>
+				<p> This Project includes mostly used jQUery Widgets.
+				</p>
+
+				<a href="https://geeyas.github.io/uisyntax/" target="blank"> jQuery UI syntax </a> 
+				<br>
+				<br>
+				<iframe src="https://geeyas.github.io/uisyntax/"></iframe>
+		</ol>
+</fieldset>
+<br>
+		<hr style="box-shadow: 0 0 10px black;">
+		<hr style="box-shadow: 0 0 10px black;">
+
+
+</fieldset>
+	
+
+
+<br>
+<br>
+<hr style="box-shadow: 0 0 10px black;">
+<a href="./languagesScrollSpy.html">
+<input type="button" value="ScrollSpy Version" id="download"><br><br>
+</a>
+<hr style="box-shadow: 0 0 10px black;">
+
+<br>
+<div class="foot" bgimg>
+	Name - Geeyas Acharya <br><br>
+	Phone Number - 0420743183 <br><br>
+	Email - geeyasa@gmail.com <br><br>
+</div>
+<hr style="box-shadow: 0 0 10px black;">
+
+<footer>
+	<marquee> &copy Copyright 2020 </marquee>
+</footer>
+	
+</body>
+</html>
+
